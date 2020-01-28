@@ -20,7 +20,7 @@ while not quit:
                 print("You guessed higher than the number")
             if number < random_number:
                 print("You guessed lower than the number")
-            number = input("Try again! Please guess a number between : ")
+            number = input("Try again! Please guess a number between 1 and {}:".format(range) )
             number = int(number)
             count = count + 1
     print("Congratulations, you got it right in {} tries!".format(count))
